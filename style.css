@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family:OpenSauceSans-SemiBold;
+    src: url(fonts/OpenSauceSans-SemiBold.ttf);
+}
+
+/* Titles & Gen */
+.h1{
+    text-align:center;
+    padding-bottom: 5rem;
+    color: #f9cb57;
+    font-size: 8rem;
+    font-family: OpenSauceSans-SemiBold, sans-serif;
+    margin: 0px;
+}
+.h2{
+    text-align: center;
+    padding: 50px;
+    color: #f9cb57;
+    font-size: 6rem;
+    font-family: OpenSauceSans-SemiBold, sans-serif;
+}
+.h3{
+    font-family: OpenSauceSans-SemiBold, sans-serif;
+    font-size: 8rem;
+    color: #f9cb57;
+    margin-bottom:3%;
+    text-align: center;
+    padding-top: 5%;
+}
+.h4{
+    font-family: OpenSauceSans-SemiBold, sans-serif;
+    font-size: 4rem;
+    color: #f9cb57;
+    margin-left: 5%;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.div-center{
+    text-align: center;
+    background-color: #1f203c;
+    padding-top: 10%;
+}
+.p-gen{
+    font-family:'Open Sans', sans-serif;
+    font-weight: lighter;
+    text-align: justify;
+    text-justify:distribute;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    font-size: large;
+    line-height: 2rem;
+}
+.header-gen{
+    background-image: url(./img/Cattle\ NFTs-\ Sitio\ Web\ 1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #1f203c;
+}
+.main-gen{
+    background-color: #1f203c;
+}
+.div-space{
+    padding: 10%;
+}
+
+body{
+    background-color: #1f203c;
+} 
+
+/* NAV */
+.navbar{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0px 50px 0px 80px;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li{
+    margin: 0px 5px;
+    padding: 10px 12px;
+}
+.navbar ul li a{
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+    transition: color 0.2s;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;   
+}
+.navbar ul li a:hover{
+    color: #f9cb57;
+}
+
+/* FOOTER */
+.footer-gen{
+    padding-left: 0px;
+    padding-top: 5%;
+    padding-bottom: 20px;
+    background-color: #1f203c;
+    text-align: center;
+    font-family:'Open Sans', sans-serif;
+    font-weight: lighter;
+    color: #f9cb57;
+    margin: 0px;
+    
+}
+.div-footer{
+    border-top: 1px solid white;
+    margin-left: 33%;
+    margin-right: 33%;
+    margin-bottom: 1%;
+}
+.social-icon{
+    color: white;
+    transition: color 0.2s;
+    text-decoration: none;
+    margin-left: 5px;
+}
+.social-icon:hover{
+    color:#f9cb57
+}
+
+/* INDEX */
+.index-p{
+    font-family:'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: justify;
+    text-justify:distribute;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #1f203c;
+    font-size: large;
+    line-height: 2rem;
+}
+.index-main{
+    background-color: #1f203c;
+    background-image:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(./img/Background1.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100vw;
+}
+.index-grid{
+    border: 1px solid white;
+    margin: 10%;
+    margin-top: 3%;
+    padding: 1%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: repeat(3, 1fr);
+    gap: 20px;
+}
+.index-flexbox{
+    color: #1f203c;
+    font-family:'Open Sans', sans-serif;
+    font-size: medium;
+    text-align: justify;
+    display: flex;
+    flex-flow:column-reverse wrap;
+    padding: 1%;
+    background-color: white;
+    border: 1px gray solid;
+    margin: 1%;
+    justify-content: center;
+    align-items: center;  
+}  
+.index-flexbox img{
+    width: 200px;
+    height: 200px;  
+}
+.index-flexbox p{
+    padding: 10%;
+    padding-top: 0;  
+}
+
+.index-mainvid{
+    border: solid rgb(250, 250, 250) ;
+    width:43%; 
+    height:auto;   
+}
+.index-ol{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* THE TEAM */
+.theteam-main{
+    background-color: #1f203c;
+    max-width: 100vw;
+}
+.theteam-section1{
+    background-color: #1f203c;
+    background-image:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(./img/Background2.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20rem;
+    padding-top: 10rem;
+}
+.theteam-p{
+    font-family:'Open Sans', sans-serif;
+    font-weight: bold;
+    text-align: justify;
+    text-justify:distribute;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #1f203c;
+    font-size: large;
+    line-height: 2rem; 
+}
+.theteam-founders-grid {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: repeat(1, 1fr);
+    gap: 60px;
+    margin-left: 33%;
+    margin-right: 33%;
+    padding: 20px;
+   
+}
+.imgcolum{
+    width: 100%;
+    
+}
+.theteam-details{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #f9cb57;   
+}
+.theteam-details p{
+    font-family: 'Open Sans', sans-serif;;
+    color: white;
+    font-weight: lighter;
+}
+
+/* FAQS */
+.faqs-main{
+    background-color: #1f203c;
+    background-image:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(./img/background5.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 10rem;
+    padding-top: 5rem;
+}
+.faqs-details{
+    font-family: 'Open Sans', sans-serif;;
+    font-size: x-large;
+    font-weight: bold;
+    color: #1f203c;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+.faqs-details p{
+    font-family: 'Open Sans', sans-serif;;
+    color: #1f203c;
+    font-weight: bold;
+    font-size: large;
+    margin: 0px;
+}
+.faqs-details details{
+    margin-bottom: 3%;
+}
+
+/* CONTACT */
+.contact-main{
+    background-color: #1f203c;
+    background-image:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(./img/Background7.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20rem;
+    padding-top: 10rem;
+}
+.form{
+    background-color: #f2f2f2;
+    padding: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 80%;
+    margin:auto;
+}
+.form input[type=text]{
+    display: flex;
+    width: 100%;
+    padding: 22px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 768px) {
+    
+}
+
+@media only screen and (max-width: 576px) {
+    /* GEN */
+    .div-space{
+        padding: 0%;
+    }
+    .navbar{
+        align-items: flex-end;
+        padding-right: 10px;
+        padding-bottom: 25px;
+    }
+
+    /* INDEX */
+    .index-main{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+    .index-grid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row: repeat(3, 1fr);
+    }
+    .index-mainvid{
+        width: 80%; 
+        height:auto;   
+    }
+
+    /* THE TEAM */
+
+    .theteam-main{
+        
+        max-width: 0;
+    }
+    .theteam-section1{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center; 
+    }
+    .theteam-p{
+    
+    
+    }
+
+}
