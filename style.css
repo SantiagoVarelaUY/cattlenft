@@ -10,7 +10,7 @@
 }
 
 /* Titles & Gen */
-.h1{
+.h1-int{
     text-align:center;
     padding-bottom: 5rem;
     color: #f9cb57;
@@ -18,14 +18,14 @@
     font-family: OpenSauceSans-SemiBold, sans-serif;
     margin: 0px;
 }
-.h2{
+.h2-int{
     text-align: center;
     padding: 50px;
     color: #f9cb57;
     font-size: 6rem;
     font-family: OpenSauceSans-SemiBold, sans-serif;
 }
-.h3{
+.h3-int{
     font-family: OpenSauceSans-SemiBold, sans-serif;
     font-size: 8rem;
     color: #f9cb57;
@@ -33,7 +33,7 @@
     text-align: center;
     padding-top: 5%;
 }
-.h4{
+.h4-int{
     font-family: OpenSauceSans-SemiBold, sans-serif;
     font-size: 4rem;
     color: #f9cb57;
@@ -76,21 +76,10 @@ body{
 } 
 
 /* NAV */
-.navbar{
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 0px 50px 0px 80px;
+.button-color{
+    color: #f9cb57;
 }
-.navbar ul{
-    display: flex;
-    list-style: none;
-}
-.navbar ul li{
-    margin: 0px 5px;
-    padding: 10px 12px;
-}
+
 .navbar ul li a{
     color: rgb(250, 250, 250);
     text-decoration: none;
@@ -317,11 +306,11 @@ body{
     .div-space{
         padding: 0%;
     }
-    .navbar{
+    /* .navbar{
         align-items: flex-end;
         padding-right: 10px;
         padding-bottom: 25px;
-    }
+    } */
 
     /* INDEX */
     .index-main{
@@ -349,9 +338,4 @@ body{
         background-size: cover;
         background-position: center; 
     }
-    .theteam-p{
-    
-    
-    }
-
 }
