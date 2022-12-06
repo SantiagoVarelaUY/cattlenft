@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 @font-face {
@@ -271,10 +272,10 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 20rem;
-    padding-top: 10rem;
+    width: 100%;
+    height: 100vh;
 }
-.form{
+/* .form{
     background-color: #f2f2f2;
     padding: 40px;
     padding-left: 50px;
@@ -292,7 +293,7 @@ body{
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-}
+} */
 
 /* Media queries */
 
