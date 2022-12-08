@@ -15,6 +15,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
     <link rel="stylesheet" href="./style.css" />
     <title>CATTLE NFTs | Providing Stability - Contact</title>
 
@@ -24,13 +26,28 @@
 
     <header class="header-gen">
 
-        <nav class="navbar">
-            <ul>
-                <li><a href="./index.html" target="_blank" rel="noreferrer">Home</a></li>
-                <li><a href="./theTeam.html" target="_blank" rel="noreferrer">The Team</a></li>
-                <li><a href="./faqs.html" target="_blank" rel="noreferrer">FAQs</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler ms-auto button-color" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto nav-bar">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html" target="_blank" rel="noreferrer">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./theTeam.html" target="_blank" rel="noreferrer">The Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./faqs.html" target="_blank" rel="noreferrer">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <div class="div-space"></div> 
 
@@ -38,23 +55,57 @@
 
     <main class="contact-main">
 
-        <h1 class="h1">Contact Us!</h1>
-       <section class="form">
-            <form action="" method="" enctype="">
-                <select name="gender" id="gender">
-                    <option value="">-Select Gender-</option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Other">Other</option>
-                </select>
-                <input type="name" placeholder="Your First Name..."/>
-                <input type="name" placeholder="Your Last Name..."/>
-                <input type="email" placeholder="Your E-mail..."/>
-                <input type="text" placeholder="Your Message..." style="height: 200px;">
-                <button>Clean</button>
-                <button type="checkbox">Send</button>
-            </form>
-       </section>
+        <div class="container-fluid contact-all">
+            <div class="contact-form shadow rounded">
+                <div class="row">
+                    <div class="col-md-4 form-left-side p-5">
+                        <h2 class="mb-4 contact-h2">About Us</h2>
+                        <div class="contact-us">
+                            <div class="address d-flex align-items-center mb-4">
+                                <i class="fa-solid fa-location-dot icon"></i>
+                                <p><b>Address:</b> World Trade Center 123, Montevideo, Uruguay</p>
+                            </div>
+                            <div class="phone d-flex align-items-center mb-4">
+                                <i class="fa-solid fa-phone icon"></i>
+                                <p><b>Phone:</b> +598 091 234 567</p>
+                            </div>
+                            <div class="email d-flex align-items-center mb-4">
+                                <i class="fa-solid fa-envelope icon"></i>
+                                <p><b>Email:</b> info@cattlenfts.com</p>
+                            </div>
+                            <div class="website d-flex align-items-center mb-4">
+                                <i class="fa-solid fa-earth-asia icon"></i>
+                                <p><b>Website:</b> www.cattlenfts.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 form-right-side p-5">
+                        <h2 class="mb-4">Contact Us</h2>
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                                <label for="fullName" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" placeholder="Name...">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="Email" class="form-label">Email</label>
+                                <input type="email" class="form-control" placeholder="Email...">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputSubject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" placeholder="Subject...">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputMessage" class="form-label">Message</label>
+                                <textarea class="form-control" rows="6" placeholder="Message..."></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="contact-button" type="submit">Send Message</button>
+                            </div>
+                        </form>    
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
 
@@ -76,6 +127,7 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
 </body>
 

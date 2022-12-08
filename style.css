@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 @font-face {
@@ -10,7 +11,7 @@
 }
 
 /* Titles & Gen */
-.h1{
+.h1-int{
     text-align:center;
     padding-bottom: 5rem;
     color: #f9cb57;
@@ -18,14 +19,14 @@
     font-family: OpenSauceSans-SemiBold, sans-serif;
     margin: 0px;
 }
-.h2{
+.h2-int{
     text-align: center;
     padding: 50px;
     color: #f9cb57;
     font-size: 6rem;
     font-family: OpenSauceSans-SemiBold, sans-serif;
 }
-.h3{
+.h3-int{
     font-family: OpenSauceSans-SemiBold, sans-serif;
     font-size: 8rem;
     color: #f9cb57;
@@ -33,7 +34,7 @@
     text-align: center;
     padding-top: 5%;
 }
-.h4{
+.h4-int{
     font-family: OpenSauceSans-SemiBold, sans-serif;
     font-size: 4rem;
     color: #f9cb57;
@@ -68,7 +69,7 @@
     background-color: #1f203c;
 }
 .div-space{
-    padding: 10%;
+    padding: 8%;
 }
 
 body{
@@ -76,30 +77,24 @@ body{
 } 
 
 /* NAV */
-.navbar{
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 0px 50px 0px 80px;
-}
-.navbar ul{
-    display: flex;
-    list-style: none;
-}
-.navbar ul li{
-    margin: 0px 5px;
-    padding: 10px 12px;
+.button-color{
+    color: #f9cb57;
 }
 .navbar ul li a{
     color: rgb(250, 250, 250);
     text-decoration: none;
     transition: color 0.2s;
     font-family: 'Open Sans', sans-serif;
-    font-weight: lighter;   
+    font-weight: lighter;
+    font-size: 1rem;   
 }
 .navbar ul li a:hover{
     color: #f9cb57;
+}
+.nav-bar{
+    padding-right: 30px;
+    padding-top: 10px;
+    
 }
 
 /* FOOTER */
@@ -112,8 +107,7 @@ body{
     font-family:'Open Sans', sans-serif;
     font-weight: lighter;
     color: #f9cb57;
-    margin: 0px;
-    
+    margin: 0px; 
 }
 .div-footer{
     border-top: 1px solid white;
@@ -233,7 +227,6 @@ body{
 }
 .imgcolum{
     width: 100%;
-    
 }
 .theteam-details{
     font-family: 'Open Sans', sans-serif;
@@ -241,7 +234,7 @@ body{
     color: #f9cb57;   
 }
 .theteam-details p{
-    font-family: 'Open Sans', sans-serif;;
+    font-family: 'Open Sans', sans-serif;
     color: white;
     font-weight: lighter;
 }
@@ -257,14 +250,13 @@ body{
     padding-top: 5rem;
 }
 .faqs-details{
-    font-family: 'Open Sans', sans-serif;;
+    font-family: 'Open Sans', sans-serif;
     font-size: x-large;
     font-weight: bold;
     color: #1f203c;
     margin-left: 10%;
     margin-top: 3%;
 }
-
 .faqs-details p{
     font-family: 'Open Sans', sans-serif;;
     color: #1f203c;
@@ -283,47 +275,89 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 20rem;
-    padding-top: 10rem;
-}
-.form{
-    background-color: #f2f2f2;
-    padding: 40px;
-    padding-left: 50px;
-    padding-right: 50px;
-    width: 80%;
-    margin:auto;
-}
-.form input[type=text]{
-    display: flex;
     width: 100%;
-    padding: 22px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+    height: auto;
+    font-family:'Open Sans', sans-serif;
+    font-weight: bold;
+}
+.contact-all{
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 2%; 
+}
+.form-left-side{
+    background-color: transparent;
+}
+.icon{
+    padding: 15px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.form-right-side{
+    background-color: transparent;
+}
+.contact-button{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5%;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+.contact-h2{
+    padding-left: 15px;
+    font-weight: bolder;
+}
+.contact-us{
+    font-weight: lighter;
 }
 
-/* Media queries */
+/* MEDIA QUERIES */
+@media only screen and (max-width: 992px) {
+   /* INDEX 992 */
+   .index-main{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.index-grid{
+    grid-template-columns: repeat(1, 1fr);
+    grid-row: repeat(3, 1fr);
+}
+.index-mainvid{
+    width: 80%; 
+    height:auto;   
+}  
+}
 
-@media only screen and (max-width: 768px) {
-    
+@media only screen and (max-width: 768px){
+    /* CONTACT 768 */
+    .contact-all{
+        padding-top:5%;  
+    }
+    .form-left-side{
+        padding: 0;
+    }
+    .form-right-side{
+        padding: 0;
+    }
+    .contact-main{ 
+        width: 100%;
+        height: auto;
+        font-family:'Open Sans', sans-serif;
+        font-weight: bold;
+    }
 }
 
 @media only screen and (max-width: 576px) {
-    /* GEN */
+    /* GEN 576*/
     .div-space{
         padding: 0%;
     }
-    .navbar{
-        align-items: flex-end;
-        padding-right: 10px;
-        padding-bottom: 25px;
-    }
 
-    /* INDEX */
+    /* INDEX 576*/
     .index-main{
         background-repeat: no-repeat;
         background-size: cover;
@@ -338,20 +372,44 @@ body{
         height:auto;   
     }
 
-    /* THE TEAM */
+    /* FAQs 576*/
+    .faqs-details{
+        font-family: 'Open Sans', sans-serif;;
+        font-size: large;
+        font-weight: bold;
+        color: #1f203c;
+        margin-left: 20%;
+        margin-top: 3%;
+    }
+    .faqs-details p{
+        font-family: 'Open Sans', sans-serif;;
+        color: #1f203c;
+        font-weight: bold;
+        font-size: small;
+        margin: 0px;
+        text-align: justify;
+        margin-right: 10%;
+        margin-left: 2%;
+    }
 
-    .theteam-main{
-        
-        max-width: 0;
+    /* CONTACT 576 */
+    .contact-all{
+        padding-top:3%;  
     }
-    .theteam-section1{
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center; 
+    .form-left-side{
+        padding: 0;
     }
-    .theteam-p{
-    
-    
+    .form-right-side{
+        padding: 0;
     }
-
+    .contact-main{ 
+        width: 100%;
+        height: auto;
+        font-family:'Open Sans', sans-serif;
+        font-weight: bold;
+    }
 }
+
+
+
+
