@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+@font-face {
+    font-family:OpenSauceSans-SemiBold;
+    src: url(fonts/OpenSauceSans-SemiBold.ttf);
+}
+
+/* Titles & Gen */
+.h1-int{
+    text-align:center;
+    padding-bottom: 5rem;
+    color: $fontTitle;
+    font-size: 8rem;
+    font-family: OpenSauceSans-SemiBold, sans-serif;
+    margin: 0px;
+}
+.h2-int{
+    text-align: center;
+    padding: 50px;
+    color: $fontTitle;
+    font-size: 6rem;
+    font-family: OpenSauceSans-SemiBold, sans-serif;
+}
+.h3-int{
+    font-family: OpenSauceSans-SemiBold, sans-serif;
+    font-size: 8rem;
+    color: $fontTitle;
+    margin-bottom:3%;
+    text-align: center;
+    padding-top: 5%;
+}
+.h4-int{
+    font-family: OpenSauceSans-SemiBold, sans-serif;
+    font-size: 4rem;
+    color: $fontTitle;
+    margin-left: 5%;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.div-center{
+    text-align: center;
+    background-color: $backColor;
+    padding-top: 10%;
+}
+.p-gen{
+    font-family:'Open Sans', sans-serif;
+    font-weight: lighter;
+    text-align: justify;
+    text-justify:distribute;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: $fontGeneral;
+    font-size: large;
+    line-height: 2rem;
+}
+.main-gen{
+    background-color: $backColor;
+}
+.div-space{
+    padding: 8%;
+}
+body{
+    background-color: $backColor;
+} 
