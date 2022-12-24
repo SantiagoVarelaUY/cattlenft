@@ -1,0 +1,27 @@
+.header-gen{
+    background-image: url("../../img/cattlenfts-sitio-web.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: $backColor;
+}
+
+/* NAV */
+.button-color{
+    color: $genYell;
+}
+.navbar ul li a{
+    color: rgb(250, 250, 250);
+    text-decoration: none;
+    transition: color 0.2s;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;  
+}
+.navbar ul li a:hover{
+color: $genYell;
+}
+
+.nav-bar{
+    padding-right: 30px;
+    padding-top: 10px; 
+}
