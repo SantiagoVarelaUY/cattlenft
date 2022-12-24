@@ -1,0 +1,142 @@
+@media only screen and (max-width: 992px) {
+    /* NAVBAR 992 */
+    .nav-bar{
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    /* INDEX 992 */
+   .index-main{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    }
+    .index-grid{
+    grid-template-columns: repeat(1, 1fr);
+    grid-row: repeat(3, 1fr);
+    }
+    .index-mainvid{
+    width: 80%; 
+    height:auto;   
+    }  
+
+    /* THE TEAM 992 */
+    .theteam-section1{
+    width: 100%;
+    height: auto;
+    }
+    .theteam-p{
+    padding-bottom: 2rem;
+    }
+}
+
+
+@media only screen and (max-width: 768px){
+    /* CONTACT 768 */
+    .contact-all{
+        padding-top:5%;  
+    }
+    .form-left-side{
+        padding: 0;
+    }
+    .form-right-side{
+        padding: 0;
+    }
+    .contact-main{ 
+        width: 100%;
+        height: auto;
+        font-family:'Open Sans', sans-serif;
+        font-weight: bold;
+    }
+
+    /* THE TEAM 768 */
+    .h1-int-theteam{
+    font-size: 6rem;
+    }
+    .theteam-box{
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    /* GEN 576*/
+    .div-space{
+        padding: 0%;
+    }
+
+    /* INDEX 576*/
+    .index-main{
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+    .h3-int{
+        font-family: OpenSauceSans-SemiBold, sans-serif;
+        font-size: 4rem;
+    }
+    .index-grid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row: repeat(3, 1fr);
+    }
+    .index-mainvid{
+        width: 80%; 
+        height:auto;   
+    }
+
+    /* THE TEAM 576 */
+    .h1-int-theteam{
+        font-size: 5rem;
+        }
+    .h2-int{
+        font-size: 4rem;
+        }
+    .theteam-p{
+        font-family:'Open Sans', sans-serif;
+        font-weight: bold;
+        text-align: justify;
+        text-justify:distribute-all-lines;
+        color: #1f203c;
+        font-size: medium;
+        line-height: 2rem; 
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    /* FAQs 576*/
+    .faqs-details{
+        font-family: 'Open Sans', sans-serif;;
+        font-size: large;
+        font-weight: bold;
+        color: $genBlu;
+        margin-left: 20%;
+        margin-top: 3%;
+    }
+    .faqs-details p{
+        font-family: 'Open Sans', sans-serif;;
+        color: $genBlu;
+        font-weight: bold;
+        font-size: small;
+        margin: 0px;
+        text-align: justify;
+        margin-right: 10%;
+        margin-left: 2%;
+    }
+
+    /* CONTACT 576 */
+    .contact-all{
+        padding-top:3%;  
+    }
+    .form-left-side{
+        padding: 0;
+    }
+    .form-right-side{
+        padding: 0;
+    }
+    .contact-main{ 
+        width: 100%;
+        height: auto;
+        font-family:'Open Sans', sans-serif;
+        font-weight: bold;
+    }
+}
+

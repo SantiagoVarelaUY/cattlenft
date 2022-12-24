@@ -1,0 +1,44 @@
+.contact-main{
+    background-color: $backColor;
+    background-image:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../../img/background-contact.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    font-family:'Open Sans', sans-serif;
+    font-weight: bold;
+}
+.contact-all{
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 2%; 
+}
+.form-left-side{
+    background-color: transparent;
+}
+.icon{
+    padding: 15px;
+    border: 1px solid $genWhit;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.form-right-side{
+    background-color: transparent;
+}
+.contact-button{
+    background-color:$genWhit;
+    color: black;
+    border: none;
+    border-radius: 5%;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+.contact-h2{
+    padding-left: 15px;
+    font-weight: bolder;
+}
+.contact-us{
+    font-weight: lighter;
+}
