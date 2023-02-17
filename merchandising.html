@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href= "./css/style.css" />
-    <title>CATTLE NFTs | Providing Stability - Home</title>
+    <title>CATTLE NFTs | Providing Stability - Merchandising</title>
 
 </head>
 
@@ -34,13 +34,13 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto nav-bar">
                         <li class="nav-item">
-                            <a class="nav-link" href="./index.html">Home</a>
+                            <a class="nav-link" href="./index.html" target="_blank" rel="noreferrer">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./theTeam.html" target="_blank" rel="noreferrer">The Team</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./merchandising.html" target="_blank" rel="noreferrer">Merchandising</a>
+                            <a class="nav-link" href="./merchandising.html" >Merchandising</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./faqs.html" target="_blank" rel="noreferrer">FAQs</a>
@@ -56,54 +56,73 @@
 
     </header>
 
-    <main class="index-main">
+    <main>
 
-        <section>
-            <h3 class="h3-int">Providing Stability</h3>
-            <p class="index-p"> The idea behind Cattle Nfts is to sell NFTS backed up by cattle.
-                We provide stabilty in an unstable market. We assure the stabilty of the well recognized cattle market of Urguay.
-                We have extensive experience in the cattle market and now we are joining forces with a team with extensive experience in the crytpo market. We provide the best of both worlds.
-            </p>     
-        </section>
-        <section>
-            <div class="index-grid">
-                <div class="index-flexbox">
-                    <p>STABILTY
-                    </p> 
-                    <img src="./img/1.png" alt="Stability" />
-                </div>
-                <div class="index-flexbox">
-                    <p>REINVESTMENT
-                    </p> 
-                    <img src="./img/2.png" alt="Exchange" />
-                </div>
-                <div class="index-flexbox">
-                    <p>BEST CATTLE MARKET IN LATAM
-                    </p>
-                    <img src="./img/3.png" alt="Cattle-money" /> 
-                </div>
-                <div class="index-flexbox">
-                    <p>INCOME IN INCREASE
-                    </p> 
-                    <img src="./img/4.png" alt="Graph" />
-                </div>
-                <div class="index-flexbox">
-                    <p>RENEWABLE
-                    </p> 
-                    <img src="./img/5.png" alt="Renewal" />
-                </div>
-                <div class="index-flexbox">
-                   <p>PARTNERTSHIP
-                   </p> 
-                    <img src="./img/6.png" alt="community"  />
+        <div class="container">
+            <h1 class="h3-int">Carrito de compras</h1>
+            <hr>
+            <table class="table imagenes">
+                <thead class=subti-mer>
+                    <tr>
+                    <th class=subti-mer scope="col">#</th>
+                    <th scope="col">Item</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Acción</th>
+                    <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody class="fcar-mer" id="items"></tbody>
+                <tfoot>
+                    <tr class="fcar-mer" id="footer">
+                        <th class=subti-mer scope="row" colspan="5">Empty Cart - Start Buying!</th>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="row" id="cards"></div>
+        </div>
+        <template id="template-footer">
+            <th class="fcar-mer" scope="row" colspan="2">Total productos</th>
+            <td>10</td>
+            <td>
+                <button class="btn btn-danger btn-sm fcar-mer" id="vaciar-carrito">
+                    Vaciar todo
+                </button>
+                <button class="btn btn-success btn-sm fcar-mer" id="finalizar-compra">
+                    Finalizar compra
+            </button>
+            </td>
+            <td class="font-weight-bold fcar-mer">USDT <span>5000</span></td>
+        </template>
+        <template id="template-carrito">
+            <tr>
+            <th scope="row">id</th>
+            <td>Café</td>
+            <td>1</td>
+            <td>
+                <button class="btn btn-info btn-sm fcar-mer" data-id="1">
+                    +
+                </button>
+                <button class="btn btn-danger btn-sm fcar-mer" data-id="1">
+                    -
+                </button>
+            </td>
+            <td>USDT <span>500</span></td>
+            </tr>
+        </template>
+        <template id="template-card">
+            <div class="col-6 mb-2 col-md-2">
+                <div class="card" style="width: 11rem">
+                    <img src="" class="card-img-top">
+                    <div class="card-body">
+                        <h5>titulo</h5>
+                        <p>precio</p>
+                        <button class="btn btn-dark" data-id="1">Comprar</button>
+                    </div>
                 </div>
             </div>
-        </section>
-        <div class="div-center">
-           <video class="index-mainvid" src="./vids/cattle nft -  vid.mp4" controls autoplay muted loop></video>
-        </div>
-        
-    </main>   
+        </template>
+
+    </main>
 
     <footer class="footer-gen">
 
@@ -121,14 +140,14 @@
         </a>
         
     </footer>
+   
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="js/archivo.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../js/archivo.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+</body>
 </html>
