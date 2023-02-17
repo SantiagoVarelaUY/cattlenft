@@ -1,0 +1,86 @@
+[
+    { 
+      "id":1,
+      "nombre": "Remera BTC",
+      "precio": 15,
+      "img": "./img/btc.jpg"
+    },
+    {
+      "id":2,
+      "nombre": "Remera DOT", 
+      "precio": 15,
+      "img": "./img/dot.jpg"
+    },
+    {
+      "id":3,
+      "nombre": "Remera ETH ", 
+      "precio": 15,
+      "img": "./img/eth.jpg"
+    },
+    {
+      "id":4,
+      "nombre": "Remera ADA", 
+      "precio": 15,
+      "img": "./img/cardano.jpg"
+    },
+    {
+      "id":5,
+      "nombre": "Remera SOL", 
+      "precio": 15,
+      "img": "./img/solana.jpg"
+    },
+    {
+      "id":6,
+      "nombre": "Remera Evolucion", 
+      "precio": 15,
+      "img": "./img/evolution.jpg"
+    },
+    { 
+      "id":7,
+      "nombre": "Gorro BTC", 
+      "precio": 8,
+      "img": "./img/gorroB.jpg" 
+    },
+    { 
+      "id":8,
+      "nombre": "Gorro ADA",
+      "precio": 8,
+      "img": "./img/adagorro.jpg" 
+    },
+    { 
+      "id":9,
+      "nombre": "Gorro ETH", 
+      "precio": 8,
+      "img": "./img/ethgorro.jpg" 
+    },
+    { 
+      "id":10,
+      "nombre": "Gorro HODL", 
+      "precio": 8,
+      "img": "./img/hodl.jpg" 
+    },
+    { 
+      "id":11,
+      "nombre": "Gorro CRYPTO", 
+      "precio": 8,
+      "img": "./img/cryptogorro.jpg" 
+    },
+    { 
+      "id":12,
+      "nombre": "Gorro SHIBA", 
+      "precio": 8,
+      "img": "./img/GorroSH.jpg" 
+    },
+    { 
+      "id":13,
+      "nombre": "LLavero ETH", 
+      "precio": 5,
+      "img": "./img/llaverosEth.jpg" 
+    },
+    { 
+      "id":14,
+      "nombre": "Llavero BTC", 
+      "precio": 5,
+      "img": "./img/llaverosB.jpg" 
+    }
+  ]

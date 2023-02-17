@@ -70,7 +70,17 @@ body {
   background-image: url("../../img/cattlenfts-sitio-web.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: #1f203c; }
+  background-color: #1f203c; 
+}
+
+.subti-mer {
+  color: white;
+  font-size: 2rem;
+}
+
+.fcar-mer {
+  color: #fafafa;
+}
 
 /* NAV */
 .button-color {
